@@ -76,14 +76,14 @@ greeting(name)
     Brownie points if you use a ternary statement (only spend significant time on this if you have wiggle room)
 */
 
-function compareNums(num1, num2){
-  if(num1 >= num2) {
-    console.log(num1)
-  }else if(num2 >= num1){
-    console.log(num2)
-  }
+function add(num, num2) {
+  num = +num
+  num2 = +num2
+  return num + num2
 }
-console.log(compareNums(12,62))
+
+let sum1 = add(12, 24)
+
 
 
 
@@ -95,12 +95,6 @@ console.log(compareNums(12,62))
   Create a variable outside the function called 'sum' and set it equal to add invoked (called), passing in 2 arguments.
 */
 
-//function add(argument1,argument2) {
-  //const num1 = parseInt(argument1)
-  //const num2 = parseInt(argument2)
-  //return num1 + num2
-//};
-//let sum = add(12 + 24)
 
 function add(num, num2) {
   num = +num
@@ -108,7 +102,8 @@ function add(num, num2) {
   return num + num2
 }
 
-let sum = add(12, 24)
+let total = add(18, 9)
+console.log(total)
 
 
 ////////////////// PROBLEM 7 ////////////////////
@@ -176,17 +171,20 @@ function exclaimFour(str) {
   If the name parameter is anything else, return 'Cool name, NAMEPARAM' (with NAMEPARAM being the value of the name parameter being passed in).
   Create a variable called 'nameGreeting' and set it equal to your function invoked (called) passing in an argument.
 */
-function nameCheck(name) {
-  if (name === "Steven") {
+name2 = "steven"
+function nameCheck(name2) {
+  if (name2 === "Steven") {
     return "What is up Steven?"
-  } else if (name === "Bryan") {
+  } else if (name2 === "Bryan") {
     return "Hey Bryan!"
   } else {
-    return `Cool name, ${name}`
+    return `Cool name, ${name2}`
   }
 }
 
 let nameGreeting = nameCheck('Steven')
+console.log(name2)
+
 
   
 
@@ -203,9 +201,19 @@ let nameGreeting = nameCheck('Steven')
   Create a variable called 'colorRating' and set it equal to faveColorFinder invoked (called), passing in an argument.
 */
 
-//CODE HERE
+function faveColorFinder(color){
+  if(color === 'red'){
+    return('red is a great color')
+  }else if(color === 'green'){
+    return('green is a solid favorite color')
+  }else if(color === 'black'){
+    return('so trendy')
+  }else{
+    return('you need to evaluate your favorite color choice')
+  }
+}
 
-
+console.log(faveColorFinder('blue'))
 ////////////////// PROBLEM 12 ////////////////////
 let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 /*
