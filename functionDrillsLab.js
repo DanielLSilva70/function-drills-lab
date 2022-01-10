@@ -171,7 +171,7 @@ function exclaimFour(str) {
   If the name parameter is anything else, return 'Cool name, NAMEPARAM' (with NAMEPARAM being the value of the name parameter being passed in).
   Create a variable called 'nameGreeting' and set it equal to your function invoked (called) passing in an argument.
 */
-name2 = "steven"
+
 function nameCheck(name2) {
   if (name2 === "Steven") {
     return "What is up Steven?"
@@ -182,8 +182,8 @@ function nameCheck(name2) {
   }
 }
 
-let nameGreeting = nameCheck('Steven')
-console.log(name2)
+let nameGreeting = nameCheck('Daniel')
+console.log(nameGreeting)
 
 
   
@@ -258,7 +258,12 @@ console.log(oddChecker)
     we would expect the function to return 'Sharknado is the best movie ever!'
 */
 
-//CODE HERE
+
+
+
+
+
+
 
 
 ////////////////// PROBLEM 15 ////////////////////
