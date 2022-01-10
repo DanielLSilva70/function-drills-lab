@@ -24,9 +24,11 @@ helloWorld()
     Write an arrow function called 'jsNinja' that returns the string: 'I am a JavaScript ninja!'
 */
  
-const jsNinja = () => 'I am a JavaScript ninja!'
-console.log('I am a Javascript ninja')
-  
+const jsNinja = () => {
+  console.log('I am a Javascript Ninja')
+}
+jsNinja()
+
   
 
 
@@ -36,8 +38,11 @@ console.log('I am a Javascript ninja')
   Ex. If 'Cameron' were passed in as the argument, Cameron would be console logged.
   Call the function, passing in an argument.
 */
+function printName(name1) {
+  console.log(name1)
+}
+console.log('Cameron')
 
-//CODE HERE
 
 
 ////////////////// PROBLEM 4 ////////////////////
@@ -51,7 +56,7 @@ console.log('I am a Javascript ninja')
   Make sure to call your function and pass in an argument.
 */
 
-//CODE HERE
+function greeting(name) {}
 
 
 ////////////////// PROBLEM 5 ////////////////////
