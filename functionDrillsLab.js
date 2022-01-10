@@ -23,8 +23,11 @@ helloWorld()
 /*
     Write an arrow function called 'jsNinja' that returns the string: 'I am a JavaScript ninja!'
 */
-
-//CODE HERE
+ 
+const jsNinja = () => 'I am a JavaScript ninja!'
+console.log('I am a Javascript ninja')
+  
+  
 
 
 ////////////////// PROBLEM 3 ////////////////////
