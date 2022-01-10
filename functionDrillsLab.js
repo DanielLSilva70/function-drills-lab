@@ -56,7 +56,13 @@ console.log('Cameron')
   Make sure to call your function and pass in an argument.
 */
 
-function greeting(name) {}
+function greeting(name) {
+  console.log(`hello, ${name}`)
+}
+let name = 'jake'
+greeting(name)
+
+
 
 
 ////////////////// PROBLEM 5 ////////////////////
@@ -70,7 +76,15 @@ function greeting(name) {}
     Brownie points if you use a ternary statement (only spend significant time on this if you have wiggle room)
 */
 
-//CODE HERE
+function compareNums(num1, num2){
+  if(num1 >= num2) {
+    console.log(num1)
+  }else if(num2 >= num1){
+    console.log(num2)
+  }
+}
+console.log(compareNums(12,62))
+
 
 
 ////////////////// PROBLEM 6 ////////////////////
@@ -81,7 +95,20 @@ function greeting(name) {}
   Create a variable outside the function called 'sum' and set it equal to add invoked (called), passing in 2 arguments.
 */
 
-//CODE HERE
+//function add(argument1,argument2) {
+  //const num1 = parseInt(argument1)
+  //const num2 = parseInt(argument2)
+  //return num1 + num2
+//};
+//let sum = add(12 + 24)
+
+function add(num, num2) {
+  num = +num
+  num2 = +num2
+  return num + num2
+}
+
+let sum = add(12, 24)
 
 
 ////////////////// PROBLEM 7 ////////////////////
@@ -97,7 +124,7 @@ const exclaim = function(str) {
 
 // arrow
 // declaration
-// expression
+  //expression  <======
 
 
 
@@ -112,7 +139,7 @@ const exclaimTwo = str => {
   return str.toUpperCase() + '!!!'
 }
 
-// arrow
+ //arrow <=======
 // declaration
 // expression
 
@@ -137,7 +164,7 @@ function exclaimFour(str) {
 }
 
 // arrow
-// declaration
+//declaration    <======
 // expression
 
 
@@ -149,8 +176,21 @@ function exclaimFour(str) {
   If the name parameter is anything else, return 'Cool name, NAMEPARAM' (with NAMEPARAM being the value of the name parameter being passed in).
   Create a variable called 'nameGreeting' and set it equal to your function invoked (called) passing in an argument.
 */
+function nameCheck(name) {
+  if (name === "Steven") {
+    return "What is up Steven?"
+  } else if (name === "Bryan") {
+    return "Hey Bryan!"
+  } else {
+    return `Cool name, ${name}`
+  }
+}
 
-//CODE HERE
+let nameGreeting = nameCheck('Steven')
+
+  
+
+
 
 
 ////////////////// PROBLEM 11 ////////////////////
