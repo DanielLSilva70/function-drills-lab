@@ -59,8 +59,9 @@ console.log('Cameron')
 function greeting(name) {
   console.log(`hello, ${name}`)
 }
-let name = 'jake'
-greeting(name)
+
+let name3 = 'jake'
+greeting(name3)
 
 
 
@@ -193,40 +194,43 @@ console.log(nameGreeting)
 
 ////////////////// PROBLEM 11 ////////////////////
 /*
-  Write a function called faveColorFinder that takes in one parameter called color (which will be a string).
-  If the passed in color equals 'red', return 'red is a great color'
-  If the passed in color equals 'green', return 'green is a solid favorite color'
-  If the passed in color equals 'black', return 'so trendy'
-  Otherwise, you should return the string 'you need to evaluate your favorite color choice'
-  Create a variable called 'colorRating' and set it equal to faveColorFinder invoked (called), passing in an argument.
+Write a function called faveColorFinder that takes in one parameter called color (which will be a string).
+If the passed in color equals 'red', return 'red is a great color'
+If the passed in color equals 'green', return 'green is a solid favorite color'
+If the passed in color equals 'black', return 'so trendy'
+Otherwise, you should return the string 'you need to evaluate your favorite color choice'
+Create a variable called 'colorRating' and set it equal to faveColorFinder invoked (called), passing in an argument.
 */
 
 function faveColorFinder(color){
   if(color === 'red'){
-    return('red is a great color')
+    return 'red is a great color'
   }else if(color === 'green'){
-    return('green is a solid favorite color')
+    return 'green is a solid favorite color'
   }else if(color === 'black'){
-    return('so trendy')
+    return 'so trendy'
   }else{
-    return('you need to evaluate your favorite color choice')
+    return 'you need to evaluate your favorite color choice'
   }
 }
 console.log(faveColorFinder('blue'))
 ////////////////// PROBLEM 12 ////////////////////
 let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
+let arr6 =["edon","ddon"]
 /*
   Create a function called printAllNames that takes in a single argument (an array of names).
   Using a for loop, iterate over that array and console log each name.
   Call the function, passing in the `namesArr` array (above).
 */
 function printAllNames(names){
-  for(let i = 0; i < names.length; i++){
-    console.log(names[i])
-  }
+for(let i = 0; i < names.length; i++){
+  console.log(i)
+  console.log(names[i])
+}
 }
 printAllNames(namesArr)
-console.log(namesArr)
+printAllNames(arr6)
+
 
 
 
@@ -244,7 +248,7 @@ function thatsOdd(num) {
     return 'that is odd indeed'
   }
 }
-let oddChecker = thatsOdd(4)
+let oddChecker = thatsOdd(10)
 console.log(oddChecker)
 
 
@@ -258,6 +262,13 @@ console.log(oddChecker)
     we would expect the function to return 'Sharknado is the best movie ever!'
 */
 
+// const bestMovie = () => {
+//   console.log('MOVEIEPARAM is the best movie ever!')
+// }
+
+  const bestMovie = (MOVEIEPARAM) => {return  MOVEIEPARAM + ' is the best movie ever!' }
+
+console.log(bestMovie("spiderman"))
 
 
 
@@ -277,7 +288,17 @@ let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
   Return the answers array inside of the function to a variable called `arrayEvaluator`.
 */
 
-//CODE HERE
+
+// function bigOrSmall(arr) {
+//   let answers = []
+// } for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] > 100) {
+//     answers.push('big')
+//   } else {
+//     answers.push('small')
+//   }
+// }
+
 
 
 ////////////////// PROBLEM 16 ////////////////////
@@ -288,7 +309,9 @@ let loser = 'Glimmer'
   The function should loop over the array of contestant names. If the loser string appears in the array, splice it out. Return the new contestants array.
 */
 
-//CODE HERE
+// function theEliminator(contestants, loser) {
+//   for(let i = 0; i contestants )
+// }
 
 
 ////////////////// PROBLEM 17 ////////////////////
