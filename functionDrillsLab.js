@@ -289,29 +289,40 @@ let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
 */
 
 
-// function bigOrSmall(arr) {
-//   let answers = []
-// } for (let i = 0; i < arr.length; i++) {
-//   if (arr[i] > 100) {
-//     answers.push('big')
-//   } else {
-//     answers.push('small')
-//   }
-// }
+function bigOrSmall(arr) {
+  let answers = []
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > 100) {
+      answers.push('big')
+    } else {
+      answers.push('small')
+    }
+  } 
+  return answers
+}
 
+
+let check15 = bigOrSmall(bigOrSmallArray)
+console.log(check15)
 
 
 ////////////////// PROBLEM 16 ////////////////////
-let contestants = ['Katniss', 'Peeta', 'Fox-face', 'Glimmer', 'Cato', 'Rue', 'Thresh', 'Clove', 'Marvel']
+let contestants = ['Katniss', 'Peeta', 'Fox-face', 'Glimmer', 'Cato', 'Rue', 'Thresh','Glimmer', 'Clove', 'Marvel']
 let loser = 'Glimmer'
 /*
   Write a function that is called theEliminator, which takes in two arguments, contestants (which will each be an array of strings), and loser (which will be a string).
   The function should loop over the array of contestant names. If the loser string appears in the array, splice it out. Return the new contestants array.
 */
 
-// function theEliminator(contestants, loser) {
-//   for(let i = 0; i contestants )
-// }
+function theEliminator(con, los) {
+  for(let i = 0; i < con.length; i++) {
+    if(con[i] === los) {
+      con.splice(i,1)
+    }
+  }
+  return con
+}
+console.log(theEliminator(contestants, loser))
 
 
 ////////////////// PROBLEM 17 ////////////////////
@@ -321,8 +332,11 @@ let sampleString = "Hi, my name is Kylo."
   Invoke the function, passing in the sampleString (above).
 */
 
-//CODE HERE
-
+function makeUpperCase(str) {
+  console.log(str.toUpperCase())
+  
+} 
+console.log(makeUpperCase(sampleString))
 
 ////////////////// PROBLEM 18 ////////////////////
 /*
